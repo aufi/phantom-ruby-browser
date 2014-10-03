@@ -21,7 +21,7 @@ describe PhantomRubyBrowser do
 
   describe 'click' do
     it 'follow normal link' do
-      expect(browser.content_after_click('p > a')).to include 'Ssecond test page'
+      expect(browser.content_after_click('p > a')).to include 'Second test page'
     end
   end
 end
