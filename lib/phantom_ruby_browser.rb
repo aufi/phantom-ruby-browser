@@ -11,13 +11,13 @@ class PhantomRubyBrowser
 
   def content
     execute "var page = require('webpage').create();
-page.open('#{@location}', function() {
-var js = page.evaluate(function () {
+    page.open('#{@location}', function() {
+      setTimeout(function(){var js = page.evaluate(function () {
         return document;
-    });
-    console.log(js.all[0].outerHTML);
-  phantom.exit();
-});"
+      });
+      console.log(js.all[0].outerHTML);
+      phantom.exit();}, 1000);
+    });"
   end
 
   def content_after_click(link_selector = 'a')
