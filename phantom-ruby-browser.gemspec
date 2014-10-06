@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Marek Aufart"]
   s.email       = 'aufi.cz@gmail.com'
   s.files       = `git ls-files`.split($\)
-  s.test_files    = gem.files.grep(%r{spec/})
+  s.test_files    = s.files.grep(%r{spec/})
   s.require_paths = ["lib"]
   s.homepage    = 'https://github.com/aufi/phantom-ruby-browser'
   s.license     = 'MIT'
