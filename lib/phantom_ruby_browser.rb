@@ -1,4 +1,5 @@
 require 'phantomjs'
+require 'tempfile'
 
 class PhantomRubyBrowser
 
