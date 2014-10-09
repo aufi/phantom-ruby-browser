@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ajax test page</title>
+</head>
+<body>
+<h1>Welcome!<h1>
+    <h3>Ajax test page</h3>
+    <script>
+        function loadAjax() {
+            var  xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                    document.getElementById("destination").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET","test_page_1.html",true);
+            xmlhttp.send();
+        }
+    </script>
+    <p>
+        Lorem ipsum
+        <a href="#" onclick="loadAjax(); return false;">ajax test</a>
+    </p>
+    <div id="destination">
+    </div>
+</body>
+</html>

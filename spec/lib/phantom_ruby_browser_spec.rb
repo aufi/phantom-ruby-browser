@@ -3,6 +3,7 @@ require 'spec_helper.rb'
 describe PhantomRubyBrowser do
 
   let(:browser){ PhantomRubyBrowser.new("file://#{File.expand_path('spec/support/test_page_1.html')}") }
+  let(:ajaxbrowser){ PhantomRubyBrowser.new("file://#{File.expand_path('spec/support/test_page_ajax.html')}") }
 
   describe 'open page' do
     it 'loads phantomjs' do
@@ -16,6 +17,10 @@ describe PhantomRubyBrowser do
 
     it 'with javascript' do
       expect(browser.content).to include 'javascript_loaded'
+    end
+
+    it 'with ajax' do
+      expect(ajaxbrowser.content).to include '-'
     end
   end
 

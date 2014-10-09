@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'phantom-ruby-browser'
-  s.version     = '0.0.2'
-  s.date        = '2014-10-06'
+  s.version     = '0.1.0'
+  s.date        = '2014-10-09'
   s.summary     = "Wraps PhantomJS into Ruby code and provides basic DOM operations."
   s.description = "Wraps PhantomJS headless browser into Ruby code and provides basic DOM operations like click and get the content."
   s.authors     = ["Marek Aufart"]
