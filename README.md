@@ -7,23 +7,20 @@ Wraps PhantomJS headless browser into Ruby code and provides basic DOM operation
 
 Example
 -------
-E.g. print DOM of javascript rendered page
+Print DOM of javascript rendered page
 ```ruby
 browser = PhantomRubyBrowser.new("http://google.com/analytics")
 puts browser.content
 ```
 
+Open page, click on a link and save DOM
+```ruby
+browser = PhantomRubyBrowser.new("http://google.com/analytics")
+puts browser.content_after_click('a.ga-button')
+```
+
 Command line example
 ```
-$ gem install "phantom-ruby-browser"
-Fetching: phantomjs-1.9.7.1.gem (100%)
-Successfully installed phantomjs-1.9.7.1
-Fetching: phantom-ruby-browser-0.0.1.gem (100%)
-Successfully installed phantom-ruby-browser-0.0.1
-Installing ri documentation for phantom-ruby-browser-0.0.1
-Installing ri documentation for phantomjs-1.9.7.1
-2 gems installed
-
 $ irb
 1.9.3-p547 :002 > require 'phantom_ruby_browser'
  => true
