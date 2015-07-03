@@ -3,7 +3,7 @@ PhantomRubyBrowser
 
 Wraps PhantomJS headless browser into Ruby code and provides basic DOM operations like click and get the content.
 
-**Under development (October 2014)**
+**Under development**
 
 Example
 -------

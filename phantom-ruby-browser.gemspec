@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'phantom-ruby-browser'
-  s.version     = '0.1.0'
-  s.date        = '2014-10-09'
+  s.version     = '0.1.1'
+  s.date        = '2015-07-03'
   s.summary     = "Wraps PhantomJS into Ruby code and provides basic DOM operations."
   s.description = "Wraps PhantomJS headless browser into Ruby code and provides basic DOM operations like click and get the content."
   s.authors     = ["Marek Aufart"]
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.required_ruby_version = '>= 1.9.3'
 
-  s.add_dependency 'phantomjs', "~> 1.9.7.1"
+  s.add_dependency 'phantomjs', "~> 1.9.8.0"
 
   s.add_development_dependency "rake", "~> 10.1.0"
   s.add_development_dependency "rspec", "~> 3.1.0"
